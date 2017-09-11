@@ -12,13 +12,10 @@ coreml_model = coremltools.converters.caffe.convert(
 )
 
 
-coreml_model.author = 'Gael Foppolo'
+coreml_model.author = 'FIL SVIATOSLAV'
 coreml_model.license = 'MIT'
-coreml_model.short_description = "Guess this ... and this"
-
+coreml_model.short_description = "Guess this ... and this ..."
 coreml_model.input_description['data'] = 'Input images to be classified'
-
 coreml_model.output_description['prob'] = 'Probability of each classifier'
-coreml_model.output_description['classLabel'] = 'Most likely name of recognized object on the image'
-
+coreml_model.output_description['classLabel'] = 'name of recognized object on the image'
 coreml_model.save('myCoreMLModel.mlmodel')
